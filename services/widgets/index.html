@@ -318,7 +318,8 @@
 
         <div class="communications__omni-wrapper">
           <div class="communications__omni-img-wrapper _anim-items _anim-no-hide">
-            <picture class="communications__picture">
+            <picture class="communications__picture" data-src="../../dist/img/@1x/widgets/vigets-tablet.png"
+              data-fancybox>
               <source class="communications__omni-tablet"
                 srcset="../../dist/img/@1x/widgets/vigets-tablet.webp, ../../dist/img/@2x/widgets/vigets-tablet-x2.webp 2x"
                 type="image/webp">
@@ -368,7 +369,8 @@
               <img class="communications__auto-social" src="../../dist/img/@1x/widgets/automotizaion-social.png"
                 srcset="../../dist/img/@2x/widgets/automotizaion-social-x2.png 2x">
             </picture>
-            <picture class="communications__picture">
+            <picture class="communications__picture" data-src="../../dist/img/@1x/widgets/automotizaion-tablet.png"
+              data-fancybox>
               <source class="communications__auto-tablet"
                 srcset="../../dist/img/@1x/widgets/automotizaion-tablet.webp, ../../dist/img/@2x/widgets/automotizaion-tablet-x2.webp 2x"
                 type="image/webp">
@@ -859,14 +861,57 @@
       </div>
     </section>
     <style>
-      .appeals__messengers-tablet-two {
-        width: 100%;
-        height: 72%;
+      @media (min-width:992px) {
+        .communications__omni-tablet {
+          width: 636px !important;
+          height: 361px !important;
+        }
 
+        .communications__omni-mobile {
+          width: 203px !important;
+          height: 380px !important;
+        }
+
+        .communications__auto-social {
+          width: 30px !important;
+          height: 317px !important;
+        }
+
+        .communications__auto-tablet {
+          width: 637px !important;
+          height: 333px !important;
+        }
+
+        .communications__auto-mobile {
+          width: 203px !important;
+          height: 377px !important;
+        }
+
+        .appeals__messengers-tablet-two {
+          width: 585px !important;
+          height: 307px !important;
+        }
       }
 
-      .appeals__messengers-title-wrapper {
-        flex: 0 1 50%;
+      @media (max-width:992px) {
+        .appeals__messengers-tablet-two {
+          width: 400px !important;
+          height: 210px !important;
+        }
+      }
+
+      @media (max-width:767px) {
+        .appeals__messengers-tablet-two {
+          width: 500px !important;
+          height: 210px !important;
+        }
+      }
+
+      @media (max-width:520px) {
+        .appeals__messengers-tablet-two {
+          width: 300px !important;
+          height: 158px !important;
+        }
       }
     </style>
     <section class=" tool">
