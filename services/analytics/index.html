@@ -505,7 +505,35 @@
                           data-srcset="../../dist/img/@1x/analytics/saf-data-top-img.png 1x, ../../dist/img/@2x/analytics/saf-data-top-img.png 2x">
                       </picture>
 
+                      <style>
+                        @media (min-width:992px) {
+                          .saf-data-top-img img {
+                            width: 836px !important;
+                            height: 440px !important;
+                          }
+                        }
 
+                        @media (max-width:767px) {
+                          .saf-data-top-img img {
+                            width: 612px !important;
+                            height: 322px !important;
+                          }
+                        }
+
+                        @media (max-width:575px) {
+                          .saf-data-top-img img {
+                            width: auto !important;
+                            height: auto !important;
+                          }
+                        }
+
+                        @media (min-width:1240px) {
+                          .saf-data-top-img img {
+                            width: 1066px !important;
+                            height: 561px !important;
+                          }
+                        }
+                      </style>
                     </div>
                   </div>
                 </div>
